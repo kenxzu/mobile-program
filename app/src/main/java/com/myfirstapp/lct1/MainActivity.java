@@ -14,16 +14,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        public void pindahMerah (View v){
-            if (v.getId() == R.id.btnred) {
-                intent im = new Intent(this,RedActivity.class);
-                this.startActivity(im);
-            }else if (v.getId() == R.id.btngreen){
-                intent ih = new Intent(this, GreenActivity.class);
-                this.startActivity(ih);
-            }
-        }
 
+    }
+
+    public void pindahMerah (View v){
+        if (v.getId() == R.id.btnred) {
+            intent im = new Intent(this,RedActivity.class);
+            this.startActivity(im);
+        }else if (v.getId() == R.id.btngreen){
+            intent ih = new Intent(this, GreenActivity.class);
+            this.startActivity(ih);
+        }
     }
 
     // Inflate the menu
