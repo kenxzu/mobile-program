@@ -15,4 +15,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pindahMerah"
+        android:text="Red"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <Button
+        android:id="@+id/btngreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="209dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
