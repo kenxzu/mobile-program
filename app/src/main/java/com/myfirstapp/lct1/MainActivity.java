@@ -3,16 +3,28 @@ package com.myfirstapp.lct1;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
+    TextView th;
+    EditText et1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        th = findViewById(R.id.txtHasil);
+        et1 = findViewById(R.id.inp1);
     }
+
+    public void btnTouched(View v){
+        String data = et1.getText().toString();
+        th.setText(data);
+    }
+
 
     // Inflate the menu
     @Override
