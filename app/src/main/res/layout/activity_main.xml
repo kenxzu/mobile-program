@@ -6,12 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Hello World -->
+
+    <!-- Tombol Red -->
+
+    <!-- Tombol Green -->
+
     <TextView
+        android:id="@+id/textHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="492dp"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,17 +27,24 @@
         android:id="@+id/btnred"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:onClick="pindahMerah"
         android:text="Red"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btngreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:onClick="pindahMerah"
         android:text="Green"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="209dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnred"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnred"
+        app:layout_constraintTop_toBottomOf="@+id/btnred" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

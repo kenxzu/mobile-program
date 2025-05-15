@@ -5,27 +5,28 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.view.View;
+import androidx.appcompat .app.AppCompatActivity;
+import com.myfirstapp.lct1.R;
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 
-    public void pindahMerah (View v){
-        if (v.getId() == R.id.btnred) {
-            intent im = new Intent(this,RedActivity.class);
-            this.startActivity(im);
-        }else if (v.getId() == R.id.btngreen){
-            intent ih = new Intent(this, GreenActivity.class);
-            this.startActivity(ih);
+    public void pindahMerah(View v) {
+        switch (v.getId()) {
+            case R.id.btnred:
+                startActivity(new Intent(this, RedActivity.class));
+                break;
+            case R.id.btngreen:
+                startActivity(new Intent(this, GreenActivity.class));
+                break;
         }
     }
+
 
     // Inflate the menu
     @Override
