@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -23,14 +24,14 @@ public class MainActivity extends AppCompatActivity {
     public void btnTouched(View v){
         String data = et1.getText().toString();
         th.setText(data);
-        try {
-            int angka = Integer.parseInt(data);
-            float hasil = (float) Math.PI * angka * angka;
-            String h = String.valueOf(hasil);
-            th.setText(h);
-        } catch (Exception ex){
-
-        }
+//        try {
+//            int angka = Integer.parseInt(data);
+//            float hasil = (float) Math.PI * angka * angka;
+//            String h = String.valueOf(hasil);
+//            th.setText(h);
+//        } catch (Exception ex){
+//
+//        }
 
     }
 
