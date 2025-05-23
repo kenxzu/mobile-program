@@ -6,4 +6,6 @@
     </style>
 
     <style name="Theme.Lct1" parent="Base.Theme.Lct1" />
+
+    <style name="Theme.AppCompat.Light.DarkActionBar" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
